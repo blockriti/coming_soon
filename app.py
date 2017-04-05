@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from database import Subscribe, Base
 
 
-engine = create_engine('mysql+pymysql://root:waaslemysqlroot@127.0.0.1:3306/blockriti')
+engine = create_engine('mysql+pymysql://root:mysqlroot@127.0.0.1:3306/email')
 Base.metadata.bind = engine
 Data_session = sessionmaker(bind=engine)
 session = Data_session()
