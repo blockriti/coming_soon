@@ -13,5 +13,5 @@ class Subscribe(Base):
     email = Column(String(80), nullable=False, unique=True)
 
 
-engine = create_engine('mysql+pymysql://root:waaslemysqlroot@127.0.0.1:3306/blockriti')
+engine = create_engine('mysql+pymysql://root:mysqlroot@127.0.0.1:3306/email')
 Base.metadata.create_all(engine)
